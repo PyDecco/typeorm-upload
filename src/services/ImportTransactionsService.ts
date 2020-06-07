@@ -48,7 +48,6 @@ class ImportTransactionsService {
         const addCategoryTitles = categories
           .filter(category => !existentCategoriesTitles.includes(category))
           .filter((value, index,self) => self.indexOf(value) == index);
-        );
 
   }
 }
