@@ -8,7 +8,8 @@
     "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
     "start": "ts-node src/index.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-    "test": "cross-env NODE_ENV=test jest"
+    "test": "cross-env NODE_ENV=test jest",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {
     "@types/csv-parse": "^1.2.2",
@@ -30,7 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "cross-env": "^7.0.2",
-    "eslint": "^6.8.0",
+    "eslint": "^7.3.1",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-import-resolver-typescript": "^2.0.0",
